@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #result{
+            padding: 1em;
+            border: 1pt solid black;
+            width:50%;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>اسم الفاعل </h1>
+    <h3>البرنامج الحالي يقوم بإشتقاق اسم الفاعل من فعل ثلاثي صحيح أو مهموز الفاء أو العين أو اللام </h3>
+    <h4>مثال 
+        <li>كتب : كاتب  (صحيح)</li>
+        <li>أكل : آكل (مهموز الفاء)</li>
+        <li>سأل : سائل (مهموز العين)</li>
+        <li>قرأ : قارئ (مهموزاللام )</li>
+    </h4>
+
+    
+    <form>
+        
+        <input type="text" name="root" id="root"> 
+        <label>أدخل  الفعل هنا</label> 
+        <br>  
+        <span style="font-size: 10pt;">ملاحظة: يقوم البرنامج بافتراض الحركات قياسا على الفعل الماضي في حال عدم إدخالها</span>
+    </br>
+    <br/>
+        <input type="button" value="اشتق" onclick="DeriveEsmAlfael()">    
+    </form>
+
+    <div id="result" ></div>
+</center>
+    <script src="esmAlfael.js"></script>
+    <script src="RootFEL.js"></script>
+    <script src="Statics.js"></script>
+    <script src="derivationClass.js"></script>
+</body>
+</html>
